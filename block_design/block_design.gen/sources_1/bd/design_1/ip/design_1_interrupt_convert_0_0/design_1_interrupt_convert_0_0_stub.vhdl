@@ -1,0 +1,33 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+-- Date        : Thu Jun 29 05:34:54 2023
+-- Host        : ubuntu running 64-bit Ubuntu 20.04.6 LTS
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/porterlu/block_design/block_design.gen/sources_1/bd/design_1/ip/design_1_interrupt_convert_0_0/design_1_interrupt_convert_0_0_stub.vhdl
+-- Design      : design_1_interrupt_convert_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xcku040-ffva1156-2-i
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity design_1_interrupt_convert_0_0 is
+  Port ( 
+    bit_1 : in STD_LOGIC;
+    bit_0 : in STD_LOGIC;
+    bus_out : out STD_LOGIC_VECTOR ( 1 downto 0 )
+  );
+
+end design_1_interrupt_convert_0_0;
+
+architecture stub of design_1_interrupt_convert_0_0 is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "bit_1,bit_0,bus_out[1:0]";
+attribute X_CORE_INFO : string;
+attribute X_CORE_INFO of stub : architecture is "interrupt_convert,Vivado 2023.1";
+begin
+end;
